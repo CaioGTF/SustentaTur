@@ -45,15 +45,14 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Define o layout flexível para os itens da lista */
-}
+    display: flex;
 
 ul li {
-    margin-right: 30px; /* Adiciona espaço entre os itens */
+    margin-right: 30px; 
 }
 
 input[type="text"] {
-    margin-left: 50px; /* Alinha o campo de pesquisa à direita */
+    margin-left: 50px; 
 }
 
 body {
@@ -63,7 +62,7 @@ body {
 }
 
 header {
-    background-color: #6c7aef; /* Cor de fundo do cabeçalho */
+    background-color: #6c7aef;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -124,5 +123,3 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
-
-
