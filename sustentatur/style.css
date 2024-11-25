@@ -1,6 +1,10 @@
 .gb_Jc {
     width: 40px;
 }
+.search {
+    display: flex;
+    flex-direction: row;
+}
 
 .sections {
     display: flex;
@@ -8,11 +12,12 @@
 
 aside {
     width: 200px;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 aside ul {
     list-style-type: none;
+    flex-direction: row;
 }
 
 aside li {
@@ -20,9 +25,11 @@ aside li {
     position: relative;
     text-decoration: none;
     flex-direction: row;
+
 }
 
 aside li a {
+    
     text-decoration: none;
 }
 
@@ -32,3 +39,20 @@ aside li a:hover {
 
     
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Define o layout flexível para os itens da lista */
+}
+
+ul li {
+    margin-right: 30px; /* Adiciona espaço entre os itens */
+}
+
+input[type="text"] {
+    margin-left: 50px; /* Alinha o campo de pesquisa à direita */
+}
+
+
