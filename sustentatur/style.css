@@ -1,7 +1,7 @@
 
 header {
     position: absolute;
-    width: 14400px;
+    width: 1540px;
     height: 60px;
     left: 0px;
     top: 0px;
@@ -82,9 +82,8 @@ color: #FFFFFF;
 }
 
 .login-button {
-    display: flex; /* Itens lado a lado */
-    align-items: center; /* Alinha verticalmente ao centro */
-    gap: 8px; /* Espaçamento entre o texto e o ícone */
+    display: inline-flex; 
+    gap: 10px; /* Espaçamento entre o texto e o ícone */
     background-color: transparent; /* Fundo transparente */
     border: none; /* Remove bordas */
     cursor: pointer; /* Indica interatividade */
@@ -103,4 +102,36 @@ color: #FFFFFF;
     width: 24px; /* Ajusta o tamanho do ícone */
     height: 24px;
     fill: white; /* Define a cor do ícone */
+}
+
+
+.mural {
+
+position: absolute;
+width: 1540px;
+height: 160px;
+left: 0px;
+top: 65px;
+background: #FFFDF6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.explorar_destinos_texto {
+    /* EXPLORAR DESTINOS */
+
+position: absolute;
+width: 200px;
+height: 22px;
+left: 8px;
+top: 60px;
+
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+
+color: #5AA661;
+
+
 }
