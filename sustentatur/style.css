@@ -254,21 +254,37 @@ color: #5AA661;
   }
 
 
-
-
-.categorias {
+.categorias_links {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+  }
+  
+ 
+  .tres_categorias a {
+    text-decoration: none; 
+    color: #FFFFFF; 
+    border: 10px; 
+    border-radius: 50%; 
+    background-color: #5AA661; 
+    text-align: center; 
+    font-size: 24px;
     font-family: 'Livvic';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
-    color: #FFFFFF;
-    text-decoration: none; /* Remove sublinhado */
-    position: relative;
-    border: dashed;
-}
+    min-width: 200px;
+    /* Rectangle 21 */
 
-.categorias a {
-    border: #7A89DA;
-    text-decoration: none;
-}
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 350px;
+    height: 66px;
+    left: 106px;
+    top: 861px;
+
+    background: #5AA661;
+    border-radius: 20px;
+
+  }
+  
+
+  
