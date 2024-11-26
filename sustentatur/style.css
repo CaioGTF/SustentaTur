@@ -45,11 +45,13 @@ nav ul.i li a {
 
 .search_tur {
     text-align: center;
-    margin-left: 500px;
+    margin-left: 300px;
 
 }
 
-
+.menu-icon {
+    color: white;
+}
 .search-button {
     background-color: white;
     border: none;
@@ -73,3 +75,4 @@ nav ul.i li a {
     color: white;
     text-decoration: none;
 }
+
