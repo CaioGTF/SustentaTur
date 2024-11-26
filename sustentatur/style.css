@@ -131,6 +131,13 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     top: 30px;
 }
 
+.destinos_favoritos_icone {
+    position: absolute;
+    width: 200px;
+    left: 950px;
+    top: 50px;
+}
+
 .explorar_destinos_texto {
     /* EXPLORAR DESTINOS */
 
@@ -151,7 +158,7 @@ color: #5AA661;
 }
 
 .recursos_de_viagem_text {
-    position: absolute;
+position: absolute;
 width: 200px;
 height: 22px;
 left: 360px;
@@ -165,4 +172,28 @@ font-size: 20px;
 line-height: 25px;
 
 color: #5AA661;
+}
+
+.destinos_favoritos_text {
+    /* EXPLORAR DESTINOS */
+
+position: absolute;
+width: 200px;
+height: 22px;
+left: 920px;
+top: 100px;
+bottom: 120px;
+
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+
+color: #5AA661;
+}
+
+.logo {
+    position: absolute;
+    left: 600px;
 }
