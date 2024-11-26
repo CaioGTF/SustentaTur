@@ -207,14 +207,28 @@ color: #5AA661;
 }
 
 
-
-
-.telao {
-    height: 30px;
-}
-
 .telao_principal {
     overflow: hidden;
     width: 100%;
-    height: 900px;
+    height: 800px;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5); /* Retângulo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 710px;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
