@@ -232,3 +232,13 @@ color: #5AA661;
     font-weight: bold;
     text-align: center;
   }
+
+.passador {
+    text-align: center;
+    top: 100px;
+}
+.passador svg {
+    width: 200px;
+    height: auto;
+    margin-top: -40px;
+}
