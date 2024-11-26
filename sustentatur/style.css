@@ -1,78 +1,70 @@
+/* Estilo Geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
 header {
-    background-color: #6c7aef; 
+    background-color: #6c7aef; /* Fundo do cabeçalho */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.search {
+/* Menu de navegação */
+.i {
+    list-style: none;
     display: flex;
-}
-
-
-nav ul.i {
-    list-style-type: none;
+    gap: 20px; /* Espaçamento entre os itens */
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
-nav ul.i li {
-    margin-right: 20px;
-    font-size: 16px;
-    color: white;
-}
-
-nav ul.i li a {
+.i li a {
     text-decoration: none;
     color: white;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-
-.write {
+/* Barra de Pesquisa */
+.search-container {
     display: flex;
-}
-
-.write_search {
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 20px;
-    border: 1px solid #ddd;
-    width: 250px;
-}
-
-.search_tur {
-    text-align: center;
-    margin-left: 300px;
-
-}
-
-.menu-icon {
-    color: white;
-}
-.search-button {
+    align-items: center;
     background-color: white;
-    border: none;
-    padding: 8px;
-    margin-left: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-
-.login-button {
-    color: white;
-    background-color: #3e5cb1;
-    padding: 8px 16px;
     border-radius: 20px;
+    padding: 5px;
+    width: 300px;
+    height: 35px;
+}
+
+.search-input {
     border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    padding: 0 10px;
+    border-radius: 20px; /* Borda arredondada */
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #6c7aef; /* Mesma cor do cabeçalho */
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+/* Botão de Login */
+.login-button {
+    background-color: #3e5cb1; /* Fundo azul escuro */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
     cursor: pointer;
 }
-
-.login-button a {
-    color: white;
-    text-decoration: none;
-}
-
