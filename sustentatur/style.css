@@ -1,13 +1,17 @@
 
 header {
     position: absolute;
-    width: 1440px;
+    width: 14400px;
     height: 60px;
     left: 0px;
-    top: -4px;
+    top: 0px;
     
     background: #7A89DA;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+    height: 60px; /* Altura da barra */ 
+
 }
 
 .search {
@@ -15,16 +19,16 @@ header {
 }
 
 
-/* Menu (Nomes e Ícone) */
 nav ul.i {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex; /* Itens lado a lado */
-    align-items: center; /* Alinhamento vertical */
+    align-items: center; /* Centraliza verticalmente */
     gap: 20px; /* Espaçamento entre itens */
     position: relative;
-    left: 20px; /* Ajusta a posição para a esquerda */
+    left: 20px; /* Ajusta para a esquerda */
+    height: 100%; /* Garante alinhamento total na altura */
 }
 
 nav ul.i li a {
@@ -42,11 +46,9 @@ nav ul.i li a {
     width: 26px;
     height: 30px;
     margin-right: 15px; /* Espaço entre o ícone e os nomes */
-    position: relative;
-    top: 0; /* Centraliza verticalmente */
-    cursor: pointer; /* Aponta como clicável */
+    margin-left: 15px;
+    cursor: pointer; /* Indica interatividade */
 }
-
 .write {
     display: flex;
 }
@@ -60,14 +62,6 @@ top: 16.5px;
 
 background: #FFFDF6;
 border-radius: 20px;
-}
-
-
-
-.search_tur {
-    text-align: center;
-    margin-left: 300px;
-
 }
 
 .login-button {
@@ -86,30 +80,27 @@ line-height: 23px;
 color: #FFFFFF;
 
 }
-.search-button {
-    background-color: white;
-    border: none;
-    padding: 8px;
-    margin-left: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
 
 .login-button {
-    color: white;
-    background-color: #3e5cb1;
-    padding: 8px 16px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
+    display: flex; /* Itens lado a lado */
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 8px; /* Espaçamento entre o texto e o ícone */
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Remove bordas */
+    cursor: pointer; /* Indica interatividade */
+    color: white; /* Cor do texto */
+    font-family: 'Livvic', sans-serif; /* Fonte personalizada */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: 500; /* Peso do texto */
 }
 
 .login-button a {
-    color: white;
-    text-decoration: none;
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
 }
 
-
-
-
+.login-button svg {
+    width: 24px; /* Ajusta o tamanho do ícone */
+    height: 24px;
+    fill: white; /* Define a cor do ícone */
+}
