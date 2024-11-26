@@ -207,7 +207,14 @@ color: #5AA661;
 }
 
 
+
+
+.telao {
+    height: 30px;
+}
+
 .telao_principal {
-    width: 70%;
-    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    height: 900px;
 }
