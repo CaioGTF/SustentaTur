@@ -1,99 +1,41 @@
-.gb_Jc {
-    width: 40px;
-    color: white;
-}
-.search {
-    display: flex;
-    flex-direction: row;
-}
-
-.sections {
-    display: flex;
-}
-
-aside {
-    width: 200px;
-    padding: 1rem;
-}
-
-aside ul {
-    list-style-type: none;
-    flex-direction: row;
-}
-
-aside li {
-    margin: 1rem 0;
-    position: relative;
-    text-decoration: none;
-    flex-direction: row;
-
-}
-
-aside li a {
-    
-    text-decoration: none;
-}
-
-aside li a:hover {
-    transition: 0.4s;
-    text-decoration: underline;
-
-    
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-
-ul li {
-    margin-right: 30px; 
-}
-
-input[type="text"] {
-    margin-left: 50px; 
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 header {
-    background-color: #6c7aef;
+    background-color: #6c7aef; 
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul {
+.search {
+    display: flex;
+}
+
+
+nav ul.i {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-nav ul li {
+nav ul.i li {
     margin-right: 20px;
     font-size: 16px;
     color: white;
-    font-weight: bold;
 }
 
-nav ul li a {
+nav ul.i li a {
     text-decoration: none;
     color: white;
 }
 
-.search-container {
+
+.write {
     display: flex;
-    align-items: center;
 }
 
-.search-container input[type="text"] {
+.write_search {
     padding: 8px;
     font-size: 16px;
     border-radius: 20px;
@@ -101,14 +43,22 @@ nav ul li a {
     width: 250px;
 }
 
-.search-container button {
+.search_tur {
+    text-align: center;
+    margin-left: 500px;
+
+}
+
+
+.search-button {
     background-color: white;
     border: none;
-    padding: 8px 12px;
+    padding: 8px;
     margin-left: 10px;
     cursor: pointer;
     border-radius: 50%;
 }
+
 
 .login-button {
     color: white;
