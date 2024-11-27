@@ -545,3 +545,59 @@ color: #858585;
     padding: 10px 0; 
     bottom: 0;
 }
+
+
+
+.inscreva-se-texto {
+position: absolute;
+width: 695px;
+height: 44px;
+left: 321px;
+top: 3600px;
+
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 45px;
+
+color: #000000;
+
+}
+
+.caixa_email_digite {
+box-sizing: border-box;
+
+position: absolute;
+width: 744px;
+height: 75px;
+left: 307px;
+top: 3700px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 24px;
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 20px;
+
+}
+
+.mail-icon {
+margin-top: 195px;
+margin-left: 140px;
+}
+
+#btn-receber {
+
+position: absolute;
+width: 236px;
+height: 70px;
+left: 1082px;
+top: 3700px;
+font-size: 24px;
+color: white;
+background: #7A89DA;
+border-radius: 30px;
+border-color: #7A89DA;
+box-shadow: #000000;
+cursor: pointer;
+}
