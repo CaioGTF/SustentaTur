@@ -298,4 +298,23 @@ color: #858585;
 }
   
 
+
+.imagens_ultimos_destinos {
+    display: flex; 
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .imagens_ultimos_destinos img {
+    width: 200px; 
+    height: auto; 
+    border-radius: 20px; 
+    border: 1px solid #ddd; 
+    transition: transform 0.3s ease; 
+    margin-top: 200px;
+  }
+  
+  .imagens_ultimos_destinos img:hover {
+    transform: scale(1.1); 
+  }
   
