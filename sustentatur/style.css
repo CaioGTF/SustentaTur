@@ -474,4 +474,18 @@ color: #858585;
     bottom: 10;
 }
 
-
+.blog_sustentatur_text {
+    position: absolute;
+    width: 705px;
+    height: 44px;
+    left: 100px;
+    top: 2820px;
+    
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    
+    color: #858585;
+}
