@@ -408,3 +408,35 @@ color: #858585;
     padding: 10px 0; 
     bottom: 0;
 }
+
+.depoimentos {
+position: absolute;
+width: 705px;
+height: 44px;
+left: 100px;
+top: 2260px;
+
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 45px;
+
+color: #858585;
+}
+
+.depoimentos_fotos {
+    display: flex; 
+    justify-content: center; 
+    gap: 220px;
+}
+
+.depoimentos_fotos img {
+    width: 290px; 
+    height: 300px; 
+    border-radius: 50%; 
+    border: 1px solid #ddd; 
+    margin-top: 200px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
