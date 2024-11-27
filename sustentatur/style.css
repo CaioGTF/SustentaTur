@@ -301,11 +301,11 @@ color: #858585;
 .imagens_ultimos_destinos {
     display: flex; 
     justify-content: center; 
-    gap: 250px;
+    gap: 220px;
   }
   
   .imagens_ultimos_destinos img {
-    width: 200px; 
+    width: 290px; 
     height: auto; 
     border-radius: 20px; 
     border: 1px solid #ddd; 
@@ -316,7 +316,7 @@ color: #858585;
 
 .setas_ultimos {
     position: absolute;
-    top: 180%; 
+    top: 190%; 
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -326,30 +326,41 @@ color: #858585;
 .textos_ultimos_destinos {
     display: flex;
     justify-content: center;
-    gap: 250px;
+    gap: 210px;
     position: relative; 
-    margin-top: -130px;
+    margin-top: -135px;
 }
 
-
-
 .textos_ultimos_destinos p {
-    width: 200px; 
+    width: 300px; 
     height: 100px; 
     background-color: rgba(39, 39, 39, 0.8); 
     backdrop-filter: blur(2px);
     border-radius: 0 0 20px 20px; 
     color: white;
     font-family: 'Livvic', sans-serif;
-    font-size: 14px; 
+    font-size: 18px; 
     text-align: center; 
-    line-height: 1.5; 
+    line-height: 2.5; 
     padding: 10px 0; 
-    
     bottom: 0;
 }
 
+.trilhas_sustentaveis_text {
+position: absolute;
+width: 705px;
+height: 44px;
+left: 100px;
+top: 1610px;
 
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 45px;
+
+color: #858585;
+}
 
 
 
