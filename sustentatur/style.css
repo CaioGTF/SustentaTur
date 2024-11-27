@@ -425,6 +425,15 @@ line-height: 45px;
 color: #858585;
 }
 
+.setas_depoimentos {
+    position: absolute;
+    top: 365%; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
 .depoimentos_fotos {
     display: flex; 
     justify-content: center; 
@@ -440,3 +449,29 @@ color: #858585;
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+.textos_depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 285px;
+    position: relative; 
+    margin-top: -177px;
+}
+
+.textos_depoimentos p {
+    width: 230px; 
+    height: 160px;
+    left: 536px;
+    background-color: rgba(39, 39, 39, 0.8); 
+    backdrop-filter: blur(2px);
+    border-radius: 80%; 
+    color: white;
+    font-family: 'Livvic', sans-serif;
+    font-size: 18px; 
+    text-align: center; 
+    line-height: 2.5; 
+    padding: -50px 10; 
+    bottom: 10;
+}
+
+
