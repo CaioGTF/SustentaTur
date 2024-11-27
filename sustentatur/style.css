@@ -232,7 +232,7 @@ color: #5AA661;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-  }
+}
 
 .passador {
     text-align: center;
@@ -301,15 +301,18 @@ color: #858585;
 .imagens_ultimos_destinos {
     display: flex; 
     justify-content: center; 
-    gap: 220px;
+    gap: 200px;
   }
   
   .imagens_ultimos_destinos img {
     width: 290px; 
     height: auto; 
+    object-fit: cover;
     border-radius: 20px; 
-    border: 1px solid #ddd; 
+    border: 10px solid #ddd; 
     margin-top: 200px;
+    backdrop-filter: blur(2px);
+    border-color: rgba(39, 39, 39, 0.8);
   }
   
  
@@ -375,15 +378,18 @@ color: #858585;
 .trilhas_sustentaveis_img {
     display: flex; 
     justify-content: center; 
-    gap: 220px;
+    gap: 200px;
 }
 
 .trilhas_sustentaveis_img img {
     width: 290px; 
     height: auto; 
+    object-fit: cover;
     border-radius: 20px; 
-    border: 1px solid #ddd; 
+    border: 10px solid #ddd; 
     margin-top: 200px;
+    backdrop-filter: blur(2px);
+    border-color: rgba(39, 39, 39, 0.8); ;
 }
 
 .textos_destinos_sustentaveis {
@@ -437,17 +443,18 @@ color: #858585;
 .depoimentos_fotos {
     display: flex; 
     justify-content: center; 
-    gap: 220px;
+    gap: 200px;
 }
 
 .depoimentos_fotos img {
     width: 290px; 
     height: 300px; 
-    border-radius: 50%; 
-    border: 1px solid #ddd; 
-    margin-top: 200px;
+    border-radius: 50%;  
     object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 10px solid; 
+    margin-top: 200px;
+    backdrop-filter: blur(2px);
+    border-color: rgba(39, 39, 39, 0.8); 
 }
 
 .textos_depoimentos {
