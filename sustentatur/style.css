@@ -227,7 +227,7 @@ color: #5AA661;
     margin-top: 710px;
   }
   
-  .text {
+.text {
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -275,12 +275,11 @@ color: #5AA661;
   }
   
   .categorias_links .item:hover {
-    background-color: #90ed9c; /* Cor ao passar o mouse */
-    border-color: #93ffa2; /* Altera a borda */
+    background-color: #90ed9c;
+    border-color: #93ffa2;
   }
 
 .destinos {
-  /* ÚLTIMOS DESTINOS VISTOS POR VOCÊ */
 
 position: absolute;
 width: 705px;
@@ -302,7 +301,7 @@ color: #858585;
 .imagens_ultimos_destinos {
     display: flex; 
     justify-content: center; 
-    gap: 300px;
+    gap: 250px;
   }
   
   .imagens_ultimos_destinos img {
@@ -310,11 +309,47 @@ color: #858585;
     height: auto; 
     border-radius: 20px; 
     border: 1px solid #ddd; 
-    transition: transform 0.3s ease; 
     margin-top: 200px;
   }
   
-  .imagens_ultimos_destinos img:hover {
-    transform: scale(1.1); 
-  }
-  
+ 
+
+.setas_ultimos {
+    position: absolute;
+    top: 180%; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.textos_ultimos_destinos {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    position: relative; 
+    margin-top: -130px;
+}
+
+
+
+.textos_ultimos_destinos p {
+    width: 200px; 
+    height: 100px; 
+    background-color: rgba(39, 39, 39, 0.8); 
+    backdrop-filter: blur(2px);
+    border-radius: 0 0 20px 20px; 
+    color: white;
+    font-family: 'Livvic', sans-serif;
+    font-size: 14px; 
+    text-align: center; 
+    line-height: 1.5; 
+    padding: 10px 0; 
+    
+    bottom: 0;
+}
+
+
+
+
+
