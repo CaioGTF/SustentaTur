@@ -489,3 +489,52 @@ color: #858585;
     
     color: #858585;
 }
+
+.setas_blog {
+    position: absolute;
+    top: 450%; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.blog_sustentatur_imagens {
+    display: flex; 
+    justify-content: center; 
+    gap: 200px;
+}
+
+.blog_sustentatur_imagens img {
+    width: 290px; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 20px; 
+    border: 10px solid #ddd; 
+    margin-top: 200px;
+    backdrop-filter: blur(2px);
+    border-color: rgba(39, 39, 39, 0.8); ;
+}
+
+.blog_sustentatur_p {
+    display: flex;
+    justify-content: center;
+    gap: 210px;
+    position: relative; 
+    margin-top: -135px;
+}
+
+.blog_sustentatur_p p {
+    width: 300px; 
+    height: 100px; 
+    background-color: rgba(39, 39, 39, 0.8); 
+    backdrop-filter: blur(2px);
+    border-radius:0 0 20px 20px; 
+    color: white;
+    font-family: 'Livvic', sans-serif;
+    font-size: 18px; 
+    text-align: center; 
+    line-height: 2.5; 
+    padding: 10px 0; 
+    bottom: 0;
+}
