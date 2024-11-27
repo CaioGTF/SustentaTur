@@ -601,3 +601,9 @@ border-color: #7A89DA;
 box-shadow: #000000;
 cursor: pointer;
 }
+
+
+.texto-mail {
+    margin-left: 310px;
+    top: 1500px;
+}
