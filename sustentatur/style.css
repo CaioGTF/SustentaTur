@@ -72,6 +72,18 @@ li-menu-lateral {
     font-family: 'LIVVIC';
 }
 
+
+
+.pesquisas-barra {
+    list-style: none;
+    
+}
+
+.pesquisas {
+    cursor: pointer;
+    font-family: 'LIVVIC';
+}
+
 .icon {
     margin-right: 10px;
 }
