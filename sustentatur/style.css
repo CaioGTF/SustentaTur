@@ -345,15 +345,55 @@ color: #5AA661;
     position: absolute;
     left: 620px;
 }
-
-
-.telao_principal {
-    display: block;
-    object-fit: cover;
+.slider {
     width: 100%;
     height: 800px;
+    overflow: hidden;
 }
 
+.slides {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    margin-top: 40px;
+}
+
+.slides input {
+    display: none; /* Radios estão ocultos */
+}
+
+.slide {
+    width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn { /* Corrigido com ponto no seletor */
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #5AA661;
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -393,13 +433,14 @@ color: #5AA661;
     transform: translateY(-50%);
   }
 
-  .categorias_links {
+.categorias_links {
     display: flex; 
     justify-content: space-around; 
     align-items: center; 
   }
   
-  .categorias_links .item {
+.categorias_links .item {
+    margin-top: 80px;
     text-decoration: none; 
     color: #FFFFFF; 
     background-color: #5AA661; 
@@ -414,7 +455,7 @@ color: #5AA661;
     transition: 0.5s; 
   }
   
-  .categorias_links .item:hover {
+.categorias_links .item:hover {
     background-color: #90ed9c;
     border-color: #93ffa2;
   }
