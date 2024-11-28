@@ -16,6 +16,7 @@ header {
     color: white;
     cursor: pointer;
     text-decoration: none;
+    margin-left: 80px;
 }
 
 .menu-lateral {
@@ -45,6 +46,12 @@ header {
     padding: 20px;
     background-color:#7A89DA;
     color: #FFFFFF;
+    font-size: 16px;
+}
+
+.caio {
+    margin-left: 10px;
+    font-family: 'LIVVIC';
 }
 
 .avatar {
@@ -62,6 +69,7 @@ header {
 li-menu-lateral {
     padding: 10px 20px;
     cursor: pointer;
+    font-family: 'LIVVIC';
 }
 
 .icon {
