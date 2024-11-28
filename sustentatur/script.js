@@ -1,4 +1,5 @@
 
+
 document.addEventListener("DOMContentLoaded", () => {
         const btnMenu = document.getElementById("btnMenu");
         const menu = document.getElementById("menu");
@@ -10,12 +11,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.addEventListener("seaarch", () => {
-    let input = document.getElementById("searchbarr");
-    let x = document.getElementsByClassName("pesquisas");
-    input.addEventListener("click", (event) => {
-        event.preventDefault();
-        x.classList.toggle("active");
+
+document.addEventListener("DOMContentLoaded", () => {
+    const input = document.getElementById("searchbarr");
+    const lista = document.querySelector(".pesquisas-barra");
+
+    input.addEventListener("focus", () => {
+        lista.classList.add("active");
+    });
+
+    document.addEventListener("click", (event) => {
+        if (!input.contains(event.target) && !lista.contains(event.target)) {
+            lista.classList.remove("active");
+        }
+    });
+
+    input.addEventListener("blur", () => {
+        setTimeout(() => lista.classList.remove("active"), 100); // Atraso para capturar cliques na lista
     });
 });
-

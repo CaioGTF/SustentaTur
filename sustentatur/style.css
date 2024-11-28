@@ -73,15 +73,30 @@ li-menu-lateral {
 }
 
 
-
 .pesquisas-barra {
+    display: none;
     list-style: none;
-    
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 200px;
+    z-index: 1000;
+}
+
+.pesquisas-barra.active {
+    display: block;
 }
 
 .pesquisas {
     cursor: pointer;
+    padding: 8px 12px;
     font-family: 'LIVVIC';
+}
+
+.pesquisas:hover {
+    background-color: #f0f0f0; 
 }
 
 .icon {
