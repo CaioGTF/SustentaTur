@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
         const btnMenu = document.getElementById("btnMenu");
         const menu = document.getElementById("menu");
@@ -9,8 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
             menu.classList.toggle("active"); 
         });
 });
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const input = document.getElementById("searchbarr");
@@ -27,6 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     input.addEventListener("blur", () => {
-        setTimeout(() => lista.classList.remove("active"), 100); // Atraso para capturar cliques na lista
+        setTimeout(() => lista.classList.remove("active"), 100);
     });
 });
+
+let trilho = document.getElementById("trilho");
+let body = document.querySelector('body');
+
+trilho.addEventListener('click', ()=>{
+    trilho.classList.toggle('dark')
+    body.classList.toggle('dark')
+})
+

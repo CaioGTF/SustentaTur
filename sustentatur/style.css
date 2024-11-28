@@ -12,6 +12,42 @@ header {
     height: 60px;
 }
 
+
+.trilho {
+    width: 50px;
+    height: 24px;
+    background-color: #4d4d4d;
+    border-radius: 150px;
+    margin-left: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.indicador {
+    background-color: #ddd;
+}
+
+.trilho.dark .indicador {
+    left: 25px;
+    background-color: #000000;
+    
+}
+
+body.dark {
+    background-color: rgba(66, 51, 68, 0.25);
+}
+
 #menu-perfil {
     color: white;
     cursor: pointer;
@@ -87,6 +123,11 @@ li-menu-lateral {
 
 .pesquisas-barra.active {
     display: block;
+    color: #000000;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 10px;
 }
 
 .pesquisas {
