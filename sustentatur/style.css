@@ -381,12 +381,10 @@ color: #5AA661;
 }
 
 .manual-navigation {
-    position: absolute;
-    bottom: 800px; 
+    margin-top: -320px;
     width: 100%;
     display: flex;
     justify-content: center;
-    z-index: 2;
 }
 
 .manual-btn { 
@@ -427,7 +425,7 @@ color: #5AA661;
 
 .navigation-auto {
     position: absolute;
-    bottom: 20px; 
+    bottom: 100px; 
     width: 100%;
     display: flex;
     justify-content: center;
