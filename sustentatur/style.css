@@ -12,6 +12,9 @@ header {
     height: 60px;
 }
 
+body {
+    transition: .5s;
+}
 
 .trilho {
     width: 50px;
@@ -21,6 +24,8 @@ header {
     margin-left: 150px;
     position: relative;
     cursor: pointer;
+    bottom: 95px;
+
 }
 
 .trilho .indicador {
@@ -32,6 +37,7 @@ header {
     position: absolute;
     left: 0;
     transition: .5s;
+
 }
 
 .indicador {
@@ -45,7 +51,7 @@ header {
 }
 
 body.dark {
-    background-color: rgba(44, 35, 45, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 #menu-perfil {
