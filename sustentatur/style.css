@@ -349,6 +349,7 @@ color: #5AA661;
     width: 100%;
     height: 800px;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .slides {
@@ -356,6 +357,7 @@ color: #5AA661;
     width: 28px;
     height: 28px;
     margin-top: 40px;
+    object-fit: cover;
 }
 
 .slides input {
