@@ -361,6 +361,7 @@ color: #5AA661;
     width: 400%;
     height: 100%;
     margin-top: 210px;
+    z-index: -1;
 }
 
 .slides input {
