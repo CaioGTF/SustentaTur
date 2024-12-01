@@ -554,3 +554,12 @@ button {
 button:hover {
     background: #ffffff;
 }
+
+footer {
+    grid-area: footer;
+    background-color: #7A89DA;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+
+}
