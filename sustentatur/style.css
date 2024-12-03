@@ -1,22 +1,22 @@
-/* Estilo Geral */
+/* Estilo Geral 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: #6c7aef; /* Fundo do cabeçalho */
+    background-color: #6c7aef; /* Fundo do cabeçalho 
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Menu de navegação */
+/* Menu de navegação 
 .i {
     list-style: none;
     display: flex;
-    gap: 20px; /* Espaçamento entre os itens */
+    gap: 20px; /* Espaçamento entre os itens 
     margin: 0;
     padding: 0;
 }
@@ -29,7 +29,7 @@ header {
     letter-spacing: 1px;
 }
 
-/* Barra de Pesquisa */
+/* Barra de Pesquisa 
 .search-container {
     display: flex;
     align-items: center;
@@ -46,21 +46,21 @@ header {
     flex: 1;
     font-size: 14px;
     padding: 0 10px;
-    border-radius: 20px; /* Borda arredondada */
+    border-radius: 20px; /* Borda arredondada 
 }
 
 .search-icon {
     background: none;
     border: none;
     font-size: 18px;
-    color: #6c7aef; /* Mesma cor do cabeçalho */
+    color: #6c7aef; /* Mesma cor do cabeçalho 
     cursor: pointer;
     padding: 0 10px;
 }
 
-/* Botão de Login */
+/* Botão de Login 
 .login-button {
-    background-color: #3e5cb1; /* Fundo azul escuro */
+    background-color: #3e5cb1; /* Fundo azul escuro 
     color: white;
     border: none;
     border-radius: 20px;
@@ -68,3 +68,160 @@ header {
     font-size: 14px;
     cursor: pointer;
 }
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background: url('src/img/image.png') no-repeat center center fixed; 
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center center; 
+    height: 100vh; 
+    margin: 0;
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card-outer {
+    background-color: #7A89DA;
+    width: 800px; 
+    padding: 50px 30px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .tarja {
+    background-color: #272262;
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    z-index: 1; 
+  }
+  
+  .tarja h1 {
+    color: #FFFFFF;
+    margin: 0;
+    z-index: 2;
+  }
+  
+  
+  .logo-container {
+    position: absolute;
+    top: -90px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+  .logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  
+  .card-inner {
+    background-color: #FFFFFF;
+    padding: 40px;
+    margin-top: 80px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1; 
+  }
+  
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input:focus {
+    outline: transparent;
+  }
+  
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #272262;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #272262;
+  }
+  
+  .register-text {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .register-text a {
+    color: #9747FF;
+    text-decoration: none;
+  }
+  
+  .create-account {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup-button {
+    height: 40px;
+    border: none;
+    width: 50%;
+    border-radius: 12px;
+    background-color: #5AA661;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .fa-eye{
+    position: absolute;
+    top: 160px;
+    right: 30px;
+    cursor: pointer;
+    color:#272262;
+  }
+  
+  #verSenha {
+    position: absolute;
+    top: 235px;
+    right: 30px;
+    cursor: pointer;
+    color:#272262;
+  }
+  
+  #verConfirmeSenha {
+    position: absolute;
+    top: 310px;
+    right: 30px;
+    cursor: pointer;
+    color:#272262;
+  }

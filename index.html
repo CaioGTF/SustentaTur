@@ -3,11 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
 </head>
 <body>
-    <ul>
-        <li><a href="sustentatur/index.html">SustentaTur</a></li>
-    </ul>
+    <body>
+        <div class="container">
+            <div class="card-outer">
+    
+                <div class="tarja">
+                    <h1>Login</h1>
+                </div>
+    
+                <div class="logo-container">
+                    <img src="src/img/Ellipse 1.png" alt="Logo do sistema" class="logo">
+                </div>
+    
+                <div class="card-inner">
+                    <form>
+                        <div class="label-float">
+                            <label for="usuario">Email</label>
+                            <input type="text" id="usuario" placeholder="Email ou telefone">
+                        </div>
+    
+                        <div class="label-float">
+                            <label for="senha">Senha</label>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <input type="password" id="senha" placeholder="Senha de 8 dígitos">
+                        </div>
+    
+                        <div class="justify-center">
+                            <button type="submit">Entrar</button>
+                        </div>
+    
+                        <div class="divider">
+                            <hr>
+                        </div>
+    
+                        <p class="register-text">
+                            esqueceu a senha? <a href="http://127.0.0.1:5501/cadastro.html">Clique aqui</a>
+                        </p>
+    
+                        <div class="create-account">
+                            <p>Ainda não faz parte?</p>
+                            <button Class="signup-button">Criar nova conta</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
 </body>
 </html>
