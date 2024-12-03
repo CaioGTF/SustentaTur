@@ -1,70 +1,899 @@
-/* Estilo Geral */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 header {
-    background-color: #6c7aef; /* Fundo do cabeçalho */
-    padding: 10px 20px;
+    position: absolute;
+    width: 1540px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    
+    background: #7A89DA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: center; 
+    height: 60px;
 }
 
-/* Menu de navegação */
-.i {
+body {
+    transition: .5s;
+}
+
+.trilho {
+    width: 50px;
+    height: 24px;
+    background-color: #4d4d4d;
+    border-radius: 150px;
+    margin-left: 120px;
+    position: relative;
+    cursor: pointer;
+    bottom: 370px;
+
+
+}
+
+.trilho .indicador {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+    
+
+}
+
+.indicador {
+    background-color: #ddd;
+}
+
+.trilho.dark .indicador {
+    left: 25px;
+    background-color: #000000;
+    
+}
+
+body.dark {
+    background-color: rgb(53, 53, 53);
+}
+
+
+body.dark a {
+    color: white;
+}
+
+body.dark p {
+    color: white;
+}
+
+body.dark img {
+    border-color: white;
+}
+
+
+body.dark .mural {
+    background-color: rgb(53, 53, 53);
+}
+
+#menu-perfil {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+.menu-lateral {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    color: black;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%); 
+}
+
+.menu-lateral.active {
+    display: block;
+    transform: translateX(0); 
+}
+
+.dropdown-login {
+    position: absolute;
+    top: 50px; 
+    left: 0;
+    width: 250px;
+    background-color: #7A89DA;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px #7A89DA;
+    border-radius: 8px;
+    padding: 10px;
+    display: none; 
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-login button {
+    color: white;
+    background-color: #7A89DA;
+    border: none;
+}
+
+.dropdown-login.active {
+    display: block; 
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color:#7A89DA;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.caio {
+    margin-left: 10px;
+    font-family: 'LIVVIC';
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.ul-menu-lateral {
     list-style: none;
+    padding: 0;
+}
+
+li-menu-lateral {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'LIVVIC';
+}
+
+
+.pesquisas-barra {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 200px;
+    z-index: 1000;
+}
+
+.pesquisas-barra.active {
+    display: block;
+    color: #000000;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.pesquisas {
+    cursor: pointer;
+    padding: 8px 12px;
+    font-family: 'LIVVIC';
+}
+
+.pesquisas:hover {
+    background-color: #f0f0f0; 
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+
+
+.search {
     display: flex;
     gap: 20px; /* Espaçamento entre os itens */
     margin: 0;
     padding: 0;
+    display: flex; /* Itens lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaçamento entre itens */
+    position: relative;
+    left: 20px; /* Ajusta para a esquerda */
+    height: 100%; /* Garante alinhamento total na altura */
 }
 
-.i li a {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-/* Barra de Pesquisa */
-.search-container {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    width: 300px;
-    height: 35px;
-}
-
-.search-input {
-    border: none;
-    outline: none;
-    flex: 1;
-    font-size: 14px;
-    padding: 0 10px;
-    border-radius: 20px; /* Borda arredondada */
-}
-
-.search-icon {
-    background: none;
-    border: none;
+nav ul.i li a {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 400;
     font-size: 18px;
-    color: #6c7aef; /* Mesma cor do cabeçalho */
-    cursor: pointer;
-    padding: 0 10px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-decoration: none; 
+    position: relative;
 }
 
-/* Botão de Login */
-.login-button {
-    background-color: #3e5cb1; /* Fundo azul escuro */
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 16px;
-    font-size: 14px;
-    cursor: pointer;
+.menu-icon {
+    width: 26px;
+    height: 30px;
+    margin-right: 15px; 
+    margin-left: 15px;
+    cursor: pointer; 
 }
+.write {
+    display: flex;
+}
+
+.write_search {
+position: absolute;
+width: 280.6px;
+height: 22px;
+left: 378.08px;
+top: 16.5px;
+
+background: #FFFDF6;
+border-radius: 20px;
+}
+
+.login-button {
+position: absolute;
+width: 54px;
+height: 22px;
+left: 1339px;
+top: 20px;
+
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 23px;
+
+color: #FFFFFF;
+
+}
+
+.login-button {
+    display: inline-flex; 
+    gap: 10px; /* Espaçamento entre o texto e o ícone */
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Remove bordas */
+    cursor: pointer; /* Indica interatividade */
+    color: white; /* Cor do texto */
+    font-family: 'Livvic', sans-serif; /* Fonte personalizada */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: 500; /* Peso do texto */
+}
+
+.login-button a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.login-button svg {
+    width: 24px; /* Ajusta o tamanho do ícone */
+    height: 24px;
+    fill: white; /* Define a cor do ícone */
+}
+
+.login-icon {
+    text-align: center;
+}
+.mural {
+
+position: absolute;
+width: 1540px;
+height: 160px;
+left: 0px;
+top: 55px;
+background: #FFFDF6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.explorar_destinos_icone {
+    position: absolute;
+    width: 200px;
+    left: 120px;
+    top: 40px;
+}
+
+.recursos_de_viagem_icone {
+    position: absolute;
+    width: 200px;
+    left: 400px;
+    top: 25px;
+}
+
+.destinos_favoritos_icone {
+    position: absolute;
+    width: 200px;
+    left: 960px;
+    top: 50px;
+}
+
+.praticas_sustentaveis_icone {
+    position: absolute;
+    width: 200px;
+    left: 1150px;
+    top: 30px;
+}
+
+
+.explorar_destinos_texto {
+   
+
+position: absolute;
+width: 200px;
+height: 22px;
+left: 90px;
+top: 100px;
+bottom: 120px;
+
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 25px;
+
+color: #5AA661;
+}
+
+.recursos_de_viagem_text {
+position: absolute;
+width: 200px;
+height: 22px;
+left: 360px;
+top: 100px;
+bottom: 120px;
+
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+
+color: #5AA661;
+}
+
+.destinos_favoritos_text {
+   
+
+position: absolute;
+width: 200px;
+height: 22px;
+left: 900px;
+top: 100px;
+bottom: 120px;
+
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 25px;
+
+color: #5AA661;
+}
+
+.logo {
+    position: absolute;
+    left: 620px;
+}
+.slider {
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 1600px; 
+    height: 800px; 
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    margin-top: 210px;
+    z-index: -1;
+}
+
+.slides input {
+    display: none; 
+}
+
+.slide {
+    width: 25%; 
+    height: 100%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.manual-navigation {
+    margin-top: -320px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn { 
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 15px;
+}
+
+.manual-btn:hover {
+    background-color: #5AA661;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+.navigation-auto div {
+    border: 2px solid #000000;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    bottom: 100px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 15px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #5AA661;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #5AA661;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #5AA661;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 710px;
+  }
+  
+.text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.passador {
+    text-align: center;
+    top: 100px;
+}
+.passador svg {
+    width: 200px;
+    height: auto;
+    margin-top: -40px;
+}
+
+.setas {
+    position: absolute;
+    top: 75%; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+.categorias_links {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+  }
+  
+.categorias_links .item {
+    margin-top: 80px;
+    text-decoration: none; 
+    color: #FFFFFF; 
+    background-color: #5AA661; 
+    text-align: center;
+    font-size: 18px; 
+    font-family: 'Livvic', sans-serif;
+    padding: 2px 40px; 
+    border: 2px solid #5AA661; 
+    border-radius: 40px;
+    box-sizing: border-box; 
+    min-width: 200px; 
+    transition: 0.5s; 
+  }
+  
+.categorias_links .item:hover {
+    background-color: #90ed9c;
+    border-color: #93ffa2;
+  }
+
+.destinos {
+
+position: absolute;
+width: 705px;
+height: 44px;
+left: 100px;
+top: 1000px;
+
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 45px;
+
+color: #858585;
+}
+  
+
+
+.imagens_ultimos_destinos {
+    display: flex; 
+    justify-content: center; 
+    gap: 200px;
+  }
+  
+  .imagens_ultimos_destinos img {
+    width: 290px; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 20px; 
+    border: 10px solid #ddd; 
+    margin-top: 200px;
+    backdrop-filter: blur(2px);
+    border-color: rgba(39, 39, 39, 0.8);
+  }
+  
+ 
+
+.setas_ultimos {
+    position: absolute;
+    top: 190%; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.textos_ultimos_destinos {
+    display: flex;
+    justify-content: center;
+    gap: 210px;
+    position: relative; 
+    margin-top: -135px;
+}
+
+.textos_ultimos_destinos p {
+    width: 300px; 
+    height: 100px; 
+    background-color: rgba(39, 39, 39, 0.8); 
+    backdrop-filter: blur(2px);
+    border-radius: 0 0 20px 20px; 
+    color: white;
+    font-family: 'Livvic', sans-serif;
+    font-size: 18px; 
+    text-align: center; 
+    line-height: 2.5; 
+    padding: 10px 0; 
+    bottom: 0;
+}
+
+.trilhas_sustentaveis_text {
+position: absolute;
+width: 705px;
+height: 44px;
+left: 100px;
+top: 1610px;
+
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 45px;
+
+color: #858585;
+}
+
+
+.setas_sustentaveis {
+    position: absolute;
+    top: 280%; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.trilhas_sustentaveis_img {
+    display: flex; 
+    justify-content: center; 
+    gap: 200px;
+}
+
+.trilhas_sustentaveis_img img {
+    width: 290px; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 20px; 
+    border: 10px solid #ddd; 
+    margin-top: 200px;
+    backdrop-filter: blur(2px);
+    border-color: rgba(39, 39, 39, 0.8); ;
+}
+
+.textos_destinos_sustentaveis {
+    display: flex;
+    justify-content: center;
+    gap: 210px;
+    position: relative; 
+    margin-top: -135px;
+}
+
+.textos_destinos_sustentaveis p {
+    width: 300px; 
+    height: 100px; 
+    background-color: rgba(39, 39, 39, 0.8); 
+    backdrop-filter: blur(2px);
+    border-radius:0 0 20px 20px; 
+    color: white;
+    font-family: 'Livvic', sans-serif;
+    font-size: 18px; 
+    text-align: center; 
+    line-height: 2.5; 
+    padding: 10px 0; 
+    bottom: 0;
+}
+
+.depoimentos {
+position: absolute;
+width: 705px;
+height: 44px;
+left: 100px;
+top: 2260px;
+
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 45px;
+
+color: #858585;
+}
+
+.setas_depoimentos {
+    position: absolute;
+    top: 365%; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.depoimentos_fotos {
+    display: flex; 
+    justify-content: center; 
+    gap: 200px;
+}
+
+.depoimentos_fotos img {
+    width: 290px; 
+    height: 300px; 
+    border-radius: 50%;  
+    object-fit: cover;
+    border: 10px solid; 
+    margin-top: 200px;
+    backdrop-filter: blur(2px);
+    border-color: rgba(39, 39, 39, 0.8); 
+}
+
+.textos_depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 285px;
+    position: relative; 
+    margin-top: -177px;
+}
+
+.textos_depoimentos p {
+    width: 230px; 
+    height: 160px;
+    left: 536px;
+    background-color: rgba(39, 39, 39, 0.8); 
+    backdrop-filter: blur(2px);
+    border-radius: 80%; 
+    color: white;
+    font-family: 'Livvic', sans-serif;
+    font-size: 18px; 
+    text-align: center; 
+    line-height: 2.5; 
+    padding: -50px 10; 
+    bottom: 10;
+}
+
+.blog_sustentatur_text {
+    position: absolute;
+    width: 705px;
+    height: 44px;
+    left: 100px;
+    top: 2820px;
+    
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    
+    color: #858585;
+}
+
+.setas_blog {
+    position: absolute;
+    top: 450%; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.blog_sustentatur_imagens {
+    display: flex; 
+    justify-content: center; 
+    gap: 200px;
+}
+
+.blog_sustentatur_imagens img {
+    width: 290px; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 20px; 
+    border: 10px solid #ddd; 
+    margin-top: 200px;
+    backdrop-filter: blur(2px);
+    border-color: rgba(39, 39, 39, 0.8); ;
+}
+
+.blog_sustentatur_p {
+    display: flex;
+    justify-content: center;
+    gap: 210px;
+    position: relative; 
+    margin-top: -135px;
+}
+
+.blog_sustentatur_p p {
+    width: 300px; 
+    height: 100px; 
+    background-color: rgba(39, 39, 39, 0.8); 
+    backdrop-filter: blur(2px);
+    border-radius:0 0 20px 20px; 
+    color: white;
+    font-family: 'Livvic', sans-serif;
+    font-size: 18px; 
+    text-align: center; 
+    line-height: 2.5; 
+    padding: 10px 0; 
+    bottom: 0;
+}
+
+
+
+.inscreva-se-texto {
+position: absolute;
+width: 695px;
+height: 44px;
+left: 321px;
+top: 3600px;
+
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 45px;
+
+color: #000000;
+
+}
+
+.caixa_email_digite {
+box-sizing: border-box;
+
+position: absolute;
+width: 744px;
+height: 75px;
+left: 307px;
+top: 3700px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 24px;
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 20px;
+
+}
+
+.mail-icon {
+margin-top: 195px;
+margin-left: 140px;
+}
+
+#btn-receber {
+
+position: absolute;
+width: 236px;
+height: 70px;
+left: 1082px;
+top: 3700px;
+font-size: 24px;
+color: white;
+background: #7A89DA;
+border-radius: 30px;
+border-color: #7A89DA;
+box-shadow: #000000;
+cursor: pointer;
+}
+
+
+.texto-mail {
+    margin-left: 310px;
+    top: 1500px;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: #7A89DA;
+    color: white;
+    font-family: 'LIVVIC';
+    text-align: center;
+    padding: 10px 0;
+
+}
+
