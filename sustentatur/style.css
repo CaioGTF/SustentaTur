@@ -69,6 +69,11 @@ body.dark img {
     border-color: white;
 }
 
+
+body.dark .mural {
+    background-color: rgb(53, 53, 53);
+}
+
 #menu-perfil {
     color: white;
     cursor: pointer;
