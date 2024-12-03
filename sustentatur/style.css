@@ -201,7 +201,11 @@ li-menu-lateral {
 
 .search {
     display: flex;
-    gap: 20px; /* Espaçamento entre os itens */
+}
+
+
+nav ul.i {
+    list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex; /* Itens lado a lado */
