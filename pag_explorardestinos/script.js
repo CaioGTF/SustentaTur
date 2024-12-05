@@ -30,6 +30,7 @@ input.addEventListener("blur", () => {
 let trilho = document.getElementById("trilho");
 let body = document.querySelector('body');
 
+
 trilho.addEventListener('click', ()=>{
 trilho.classList.toggle('dark')
 body.classList.toggle('dark')
@@ -49,3 +50,21 @@ count = 1;
 }
 document.getElementById("radio"+count).checked = true;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+const login = document.getElementById("login_button");
+const dropdown = document.getElementById("dropdown_login");
+
+// Adiciona ou remove a classe "active" ao clicar no botão LOGIN
+login.addEventListener("click", (event) => {
+    event.stopPropagation(); // Evita que o clique feche o menu
+    dropdown.classList.toggle("active");
+});
+
+// Fecha o menu se clicar fora dele
+document.addEventListener("click", (event) => {
+    if (!login.contains(event.target)) {
+        dropdown.classList.remove("active");
+    }
+});
+});
