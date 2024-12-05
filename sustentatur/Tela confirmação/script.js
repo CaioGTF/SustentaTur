@@ -31,3 +31,7 @@ document.getElementById('pixPayment').addEventListener('click', () => {
     alert('Pagamento via Pix selecionado!');
     paymentModal.style.display = 'none';
 });
+document.getElementById('pixPayment').addEventListener('click', () => {
+    alert('Pagamento via Boleto selecionado!');
+    paymentModal.style.display = 'none';
+});
