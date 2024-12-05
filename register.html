@@ -21,12 +21,15 @@
                 <h1>Cadastre-se</h1>
             </div>
 
+
             <div class="logo-container">
-                <img src="src/img/Ellipse 1.png" alt="Logo do sistema" class="logo">
+                <img src="sustentatur/src/img/Ellipse 1.png" alt="Logo do sistema" class="logo">
             </div>
 
+             
+
             <div class="card-inner">
-                <form>
+                <form id="formCadastro">
                     <div class="label-float">
                         <label id="labelNome" for="nome">Nome Completo</label>
                         <input type="text" id="nome" placeholder="Digite seu nome">
@@ -38,11 +41,7 @@
                         
                     </div>
         
-                   <!-- <div class="label-float">
-                        <label for="ConfirmeEmail">Confirme seu E-mail</label>
-                        <input type="text" id="ConfirmeEmail" placeholder=>
-                        
-                    </div> -->
+                
         
                     <div class="label-float">
                         <label id="labelSenha" for="senha">Senha</label>
@@ -52,12 +51,12 @@
         
                     <div class="label-float">
                         <label id="labelConfirmeSenha" for="confirmeSenha">Confirme sua Senha</label>
-                        <i id="verConfirmeSenha" class="fa fa-eye" aria-hidden="true"></i>
+                        <i id="verConfirmeSenha" class="fa fa-formCadastro" aria-hidden="true"></i>
                         <input type="password" id="confirmeSenha" placeholder="Senha de 8 dígitos">
                     </div>
 
                     <div class="justify-center">
-                        <button onclick="cadastrar()">Criar conta</button>
+                        <button type="button" onclick="cadastrar(event)">Criar conta</button>
                     </div>
 
                     <div class="divider">
@@ -65,7 +64,7 @@
                     </div>
 
                     <p>Já possui uma conta?
-                        <a href="http://127.0.0.1:5501/index.html?">Faça Login</a>
+                        <a href="index.html">Faça Login</a>
                     </p>
 
             
@@ -74,6 +73,7 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
 
     <script src="script.js"></script>
 </body>
