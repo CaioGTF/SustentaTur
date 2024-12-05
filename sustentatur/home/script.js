@@ -55,13 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const login = document.getElementById("login_button");
     const dropdown = document.getElementById("dropdown_login");
 
-    // Adiciona ou remove a classe "active" ao clicar no botão LOGIN
     login.addEventListener("click", (event) => {
-        event.stopPropagation(); // Evita que o clique feche o menu
+        event.stopPropagation(); 
         dropdown.classList.toggle("active");
     });
 
-    // Fecha o menu se clicar fora dele
     document.addEventListener("click", (event) => {
         if (!login.contains(event.target)) {
             dropdown.classList.remove("active");
