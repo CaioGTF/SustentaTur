@@ -470,6 +470,10 @@ color: #5AA661;
     line-height: 1.6; /* Melhor espaçamento entre linhas */
 }
 
+.botoes-acao a{
+    text-decoration:none;
+    color: black;
+}
 
 .botoes-acao {
     display: flex;
