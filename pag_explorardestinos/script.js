@@ -51,6 +51,8 @@ count = 1;
 document.getElementById("radio"+count).checked = true;
 }
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
 const login = document.getElementById("login_button");
 const dropdown = document.getElementById("dropdown_login");
