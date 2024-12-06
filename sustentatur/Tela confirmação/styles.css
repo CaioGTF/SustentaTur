@@ -13,11 +13,39 @@ header {
     background: #7A89DA;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    z-index: 1000; /* Para sobrepor a imagem */
+    justify-content: center;
+    z-index: 1000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
 
 .menu {
     list-style: none;
