@@ -400,6 +400,12 @@ line-height: 25px;
 color: #5AA661;
 }
 
+.foz_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .destinos_favoritos_text {
     /* EXPLORAR DESTINOS */
 
@@ -423,68 +429,10 @@ color: #5AA661;
     position: absolute;
     left: 620px;
 }
-.slider {
-    margin: 0 auto;
-    width: 100%; 
-    max-width: 1600px; 
-    height: 800px; 
-    overflow: hidden;
-    position: relative;
-    z-index: -1;
-}
-
-
-.slides {
-    display: flex;
-    width: 400%;
-    height: 100%;
-    margin-top: 210px;
-    z-index: -1;
-}
-
-.slides input {
-    display: none; 
-}
-
-.slide {
-    width: 25%; 
-    height: 100%;
-    position: relative;
-    transition: 2s;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-
-.manual-navigation {
-    margin-top: -320px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn { 
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 15px;
-}
-
-.manual-btn:hover {
-    background-color: #5AA661;
-}
 
 .overlay {
     position: absolute;
-    top: 0;
+    top: -110px;
     left: 0;
     width: 100%;
     height: 100px;
