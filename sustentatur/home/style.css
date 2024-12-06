@@ -631,6 +631,11 @@ color: #858585;
     bottom: 0;
 }
 
+.textos_ultimos_destinos a {
+    color: white;
+    text-decoration: none;
+}
+
 .trilhas_sustentaveis_text {
 position: absolute;
 width: 705px;
